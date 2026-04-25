@@ -22,7 +22,7 @@ export default function DriverLogin() {
     setLoading(true)
     setTimeout(() => {
       localStorage.setItem('driverInfo', JSON.stringify({ ...form, driverId: Date.now().toString() }))
-      navigate('/dashboard')
+      navigate('/driver/dashboard')
     }, 700)
   }
 

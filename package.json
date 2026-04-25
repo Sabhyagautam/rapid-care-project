@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:all": "npm install --prefix backend && npm install --prefix frontend/client && npm install --prefix frontend/driver-client",
-    "build:client": "npm run build --prefix frontend/client",
-    "build:driver": "npm run build --prefix frontend/driver-client",
-    "build:all": "npm run build:client && npm run build:driver",
+    "install:all": "npm install --prefix backend && npm install --prefix frontend/client",
+    "build": "npm run build --prefix frontend/client",
     "dev:backend": "npm run dev --prefix backend",
-    "dev:client": "npm run dev --prefix frontend/client",
-    "dev:driver": "npm run dev --prefix frontend/driver-client"
+    "dev:frontend": "npm run dev --prefix frontend/client"
   }
 }
